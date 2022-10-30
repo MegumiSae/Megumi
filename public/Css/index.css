@@ -1,0 +1,527 @@
+span.pixal{
+    position:absolute;
+    left:-5px;
+    top:-5px;
+    width:4px;
+    height:4px;
+    background:white;
+    border-radius: 50%;
+}
+#bg1{
+    transition: 4s;
+}
+@keyframes jump {
+    0%{
+        transform: rotateY(0deg);/*定义 2D 旋转，在参数中规定角度。*/
+    }
+    50%{
+        transform: rotateY(180deg);
+    }
+    100%{
+        transform: rotateY(0deg);
+    }
+}
+a.lobox-text{
+    color: #0f0f0f;
+    opacity: 0.87;
+}
+a.lobox-text2{
+    color: #0f0f0f;
+    opacity: 0.54;
+}
+*{
+margin: 0;
+padding: 0;
+}
+@media screen and (min-width:600px) and (max-width:1600px) {
+.center{
+margin-bottom: 20px;
+}
+.foot{
+margin-bottom: 30px;
+}
+}
+@media screen and (min-height:707px) and (max-height:766px) {
+.center{
+padding-bottom: 60px;
+}
+.center-img{
+height: 123%!important;
+}
+.foot-img{
+height: 104%!important;
+}
+.foot{
+padding-bottom: 30px;
+}
+.foot-box {
+padding-bottom: 68px!important;
+}
+}
+@media screen and (min-height:600px) and (max-height:706px){
+.foot {
+padding-bottom: 132px;
+}
+.center {
+padding-bottom: 160px;
+}
+.indextext{
+margin-top: 30px!important;
+}
+.center-img{
+height: 129%!important;
+}
+.foot-img {
+height: 104% !important;
+}
+}@media screen and (min-height:707px) and (max-height:910px){
+.foot {
+padding-bottom: 113px;
+}
+.center {
+padding-bottom: 160px;
+}
+
+}
+a{
+text-decoration:none;
+}
+.video{
+width: 400px;
+height: 400px;
+position: relative;
+margin-bottom: -60px;
+/*   right: 10px;
+top: 50px;
+transform: translate(350%,-87%);*/
+/* margin-left: 50px; */
+}
+.butt{
+height: 400px;
+width: 400px;
+background: none;
+border: none;
+outline: none;
+margin-left: 111px;
+}
+.img-icon{
+background-image: url("../img/YouTube_icon_light.png");
+background-size: cover;
+width: 80px;
+height: 55px;
+position: absolute;
+left: 210px;
+top: 172.5px;
+margin-left: 111px;
+}
+.video:hover .img-icon{
+background-image: url("../img/YouTube_icon_light2.png");
+}
+.backguang1{
+background-image: url(../img/demo.png);/*插入一个图片做背景图片*/
+background-position-x: right;
+background-size: cover;         /*把背景图像扩展至足够大，以使背景图像完全覆盖背景区域。*/
+background-repeat: no-repeat;   /*不平铺*/
+background-attachment: fixed;/*把背景图片固定 鼠标滑动不变*/
+display: block;/*转换位块元素*/
+width: 100%;/*宽度为浏览器的100%*/
+min-height: 100vh;/*设置段落的最小高度 vh该元素会被撑开屏幕高度一致*/
+}
+.backguang2{
+background-image: linear-gradient(rgb(50 53 52), rgba(42,74,86, 0.28));/*线性渐变 从上往下渐变*/
+position: absolute;
+width: 100%;/*宽度为浏览器的100%*/
+height: 100vh;/*高度为浏览器的100% vh该元素会被撑开屏幕高度一致*/
+}
+.title{
+/*display: inline-block;*/
+font-weight: 300;/*字体粗细*/
+text-shadow: 1px 6px 16px #59a5ad;/*字体阴影*/
+color: #fff!important;/*字体颜色*/
+font-size: 112px;/*字体大小*/
+letter-spacing: -0.04em;/*字符之间的距离*/
+}
+.title2{
+font-weight: 300;/*字体粗细*/
+text-shadow: 1px 6px 16px #ffbcf1;/*字体阴影*/
+color: #fff!important;/*字体颜色*/
+font-size: 21px;/*字体大小*/
+letter-spacing: -0.04em;/*字符之间的距离*/
+margin-left: 59px;
+margin-bottom: -44px;
+}
+.indextext{
+width: 700px;
+margin-left: 70px;
+margin-top: 150px;
+
+}
+.but{
+width: 180px;/*宽度*/
+height: 70px;/*高度*/
+font-size: 15.2px;/*字体大小*/
+display: inline;
+margin-top: 24px!important;/*外边距向上 ！important重要的必须执行*/
+color: #fff!important;
+}
+.but1{
+margin-left:13px;
+background: 0 0;
+-webkit-box-shadow: 0 3px 1px -2px rgba(0,0,0,0.2), 0 2px 2px 0 rgba(0 0 0,0.14), 0 1px 5px 0 rgba(0 0 0 0.12);
+will-change: box-shadow;
+border: rgba(255, 255, 255, 0.7) 2px solid;/*边框颜色 大小 类型*/
+}
+.but2{
+margin-left: 72px;
+background:none;/*冲掉其他定义继承的背景*/
+border: rgba(255, 255, 255, 0.7) 2px solid;/*边框颜色 大小 类型*/
+}
+.but2:hover{
+background-color: rgb(146, 153, 157);
+}
+.but1:hover{
+background-color: rgb(146, 153, 157);
+}
+.center{
+display: block;
+width: 100%;
+/*height: 600px;*/
+min-height: 100vh;
+background-color: #ffffff;
+display: flex;
+flex-direction: row;
+}
+.center-left{
+width: 80%;
+position: absolute;
+background-color: #ffffff;
+float: left;
+
+
+
+}
+.center-img-box{
+width: 20%;
+}
+.center-img{
+position: absolute;
+display: block;
+background-image: url("../img/left.png");
+width: 23%;
+height: 100%;
+background-position: right center;/*定位图像位置 右对齐居中*/
+background-attachment: fixed;/*固定背景*/
+background-size: contain;/*自适合背景区域的最大大小*/
+background-repeat: no-repeat;/*不平铺*/
+right: -85px;
+max-width: 100%;
+overflow: hidden;
+/*border: #44444430 solid 2px;*/
+box-shadow: inset 4px -6px 9px 1px #4c3f3f;
+}
+.center-text{
+font-weight: 400;
+font-size: 34px;
+letter-spacing: 0;/*字符之间的距离*/
+text-align: center!important;
+padding-top: 32px!important;
+padding-bottom: 8px!important;
+}
+.center-text2{
+font-weight: 400;
+font-size: 16px;
+letter-spacing: .04em;
+text-align: center!important;
+padding-top: 32px!important;
+padding-bottom: 8px!important;
+opacity: 0.87;/*透明度*/
+}
+.center-box{
+width: 100%;
+/*  padding-left: 120px;
+display: flex;
+flex-direction: row;
+margin-right: auto;
+margin-left: auto;*/
+
+}
+.center-box-box{
+width: 80%;
+padding-left: 120px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+margin-right: auto;
+margin-left: auto;
+}
+.libox{
+width: 30%;/*宽度占父的30%*/
+height: 310px;
+float: left;
+list-style: none;
+margin: 3px;
+display: flex;/*设置成弹性盒子*/
+flex-direction: column;/*纵向排列*/
+border: #44444430 solid 2px;
+background-color: #fff;
+border-radius: 10px;
+
+}
+.libox:hover{
+box-shadow: 0px 1px 8px 4px #888888;
+}
+.libox-img{
+background-image: url("../img/Final_Fantasy__VII.png");
+background-size: contain;
+min-height: 150px;
+height: 27vh;/*vh该元素会被撑开屏幕高度一致*/
+background-position: center;
+background-repeat: no-repeat;
+}
+.libox-img2{
+background-image: url("../img/ff10.jpg");
+background-size: contain;
+min-height: 150px;
+height: 27vh;/*vh该元素会被撑开屏幕高度一致*/
+background-position: center;
+background-repeat: no-repeat;
+}
+.libox-img3{
+background-image: url("../img/ff13.jpg");
+background-size: contain;
+min-height: 150px;
+height: 27vh;/*vh该元素会被撑开屏幕高度一致*/
+background-position: center;
+background-repeat: no-repeat;
+}
+.libox-img4{
+background-image: url("../img/ff15.jpg");
+background-size: contain;
+min-height: 150px;
+height: 27vh;/*vh该元素会被撑开屏幕高度一致*/
+background-position: center;
+background-repeat: no-repeat;
+}
+.libox-img5{
+background-image: url("../img/ff16.jpg");
+background-size: contain;
+min-height: 150px;
+height: 27vh;/*vh该元素会被撑开屏幕高度一致*/
+background-position: center;
+background-repeat: no-repeat;
+}
+.libox-img6{
+background-image: url("../img/ff.jpg");
+background-size: contain;
+min-height: 150px;
+height: 27vh;/*vh该元素会被撑开屏幕高度一致*/
+background-position: center;
+background-repeat: no-repeat;
+}
+.lobox-text{
+display: block;
+font-size: 24px;
+line-height: 36px;
+opacity: .87;
+text-align: center;
+}
+.lobox-text2{
+display: block;
+font-size: 14px;
+line-height: 24px;
+opacity: .54;
+text-align: center;
+}
+.foot{
+position: relative;
+display: block;
+width: 100%;
+min-height: 100vh;
+display: flex;
+margin-top: -18px;
+background-color: #fafafa;
+}
+.foot-right{
+width: 80%;
+background-color: #fafafa;
+min-height: 100vh;
+float: left;
+position: absolute;
+right: 0;
+}
+.foot-text{
+font-weight: 400;
+font-size: 34px;
+letter-spacing: 0;
+text-align: center!important;
+padding-top: 32px!important;
+padding-bottom: 8px!important;
+}
+.foot-text2{
+font-weight: 400;
+font-size: 16px;
+letter-spacing: .04em;
+text-align: center!important;
+padding-top: 32px!important;
+padding-bottom: 8px!important;
+opacity: 0.87;/*透明度*/
+}
+.foot-box{
+width: 100%;
+}
+.foot-box-box{
+width: 80%;
+padding-left: 120px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+margin-right: auto;
+margin-left: auto;
+}
+.footlibox{
+width: 30%;
+height: 310px;
+float: left;
+list-style: none;
+margin: 3px;
+display: flex;
+flex-direction: column;
+border: #44444430 solid 2px;
+background-color: #fff;
+border-radius: 10px;
+}
+.foot-img{
+position: absolute;
+display: block;
+background-image: url("../img/ff14.png");
+width: 19%;
+height: 100%;
+background-position: left center;/*定位图像位置 右对齐居中*/
+background-attachment: fixed;/*固定背景*/
+background-size: contain;/*自适合背景区域的最大大小*/
+background-repeat: no-repeat;/*不平铺*/
+max-width: 100%;
+overflow: hidden;
+/*border: #44444430 solid 2px;*/
+box-shadow: inset -4px -4px 10px 1px #4c3f3f;
+}
+.footlibox:hover{
+box-shadow: 0px 1px 8px 4px #888888;
+}
+.footlibox-img{
+background-image: url("../img/kld.png");
+background-size: contain;
+min-height: 150px;
+height: 27vh;/*vh该元素会被撑开屏幕高度一致*/
+background-position: center;
+background-repeat: no-repeat;
+
+}
+.footlibox-img2{
+background-image: url("../img/td.png");
+background-size: contain;
+min-height: 150px;
+height: 27vh;/*vh该元素会被撑开屏幕高度一致*/
+background-position: center;
+background-repeat: no-repeat;
+
+}
+.footlibox-img3{
+background-image: url("../img/lg.png");
+background-size: contain;
+min-height: 150px;
+height: 27vh;/*vh该元素会被撑开屏幕高度一致*/
+background-position: center;
+background-repeat: no-repeat;
+
+}
+.footlibox-img4{
+background-image: url("../img/nkts.png");
+background-size: contain;
+min-height: 150px;
+height: 27vh;/*vh该元素会被撑开屏幕高度一致*/
+background-position: center;
+background-repeat: no-repeat;
+
+}
+.footlibox-img5{
+background-image: url("../img/kv_pc.png");
+background-size: contain;
+min-height: 150px;
+height: 27vh;/*vh该元素会被撑开屏幕高度一致*/
+background-position: center;
+background-repeat: no-repeat;
+
+}
+.footlibox-img6{
+background-image: url("../img/cliveRosfield_art_pc.png");
+background-size: contain;
+min-height: 150px;
+height: 27vh;/*vh该元素会被撑开屏幕高度一致*/
+background-position: center;
+background-repeat: no-repeat;
+
+}
+.footer{
+width: 100%;
+background-color: #ece6e6;
+height: 200px;
+margin-top: -1px;
+display: flex;
+justify-content: center;
+border-top: 1px solid #fcfcfc;
+position: relative;
+}
+.footerbox{
+width: 60%;
+background-color: #ece6e6;
+display: flex;
+margin-left: 10px;
+align-content: stretch;
+justify-content: space-evenly;
+align-items: center;
+}
+.footerbox ul li{
+float: left;
+list-style-type:none;
+margin-left: 20px;
+}
+.footer-ioc{
+width: 90px;
+height: 90px;
+border: 1px solid #e8e2e2;
+box-shadow: 0 5px 15px -5px #00000070;
+border-radius: 30%;
+text-align: center;
+line-height: 120px;
+
+}
+.img-hover:hover{
+background-color: #2aabd2;
+border-radius: 30%;
+background-size:100px 100px;
+}
+.logo{
+float: left;
+position: absolute;
+left: 17%;
+}
+.banquan{
+font-size: 16px;
+opacity: 0.58;
+position: absolute;
+right: 2px;
+bottom: 0px;
+}
+.zhuce{
+position: absolute;
+bottom: 0;
+opacity: 0.87;
+}
+.zhuce a{
+color: #0f0f0f;
+}
+.zhuce a:hover{
+color: #908989;
+
+}
